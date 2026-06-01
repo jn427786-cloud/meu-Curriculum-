@@ -1,0 +1,271 @@
+<!---autor Waldemir do Monte Nogueira junior-->
+<!--HTML-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Waldemir Junior</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f2f5, #dfe6e9);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #0077b5;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 70px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .foto-perfil {
+            width: 100%px;
+            height: 100%px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0077b5;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #0077b5;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Botões PDF */
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-pdf {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s, background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-open {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        .btn-open:hover {
+            background-color: #1f6391;
+            transform: scale(1.05);
+        }
+
+        .btn-download {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .btn-download:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        /* Ícones sociais */
+        #redes a, #projetos a {
+            display: inline-block;
+            margin: 10px;
+            font-size: 22px;
+            color: #333;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        #redes a:hover, #projetos a:hover {
+            transform: scale(1.2);
+        }
+
+        #redes a .fa-linkedin { color: #0077b5; }
+        #redes a .fa-github { color: #000; }
+
+        @media (max-width: 600px) {
+            body { font-size: 14px; }
+            .foto-perfil { width: 120px; height: 120px; }
+            nav a { display: block; margin: 5px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#contato">Contato</a>
+        <a href="#redes">Redes</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#objetivo">Objetivo</a>
+        <a href="#formacao">Formação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#certificados">Certificados</a>
+    </nav>
+
+    <header>
+        <img src="./img/Waldemir junior.png" alt="Foto de Waldemir Junior" class="foto-perfil">
+        <h1>Currículo <br> Waldemir do Monte Nogueira Junior</h1>
+        <p><b><strong>Ciência da Computação</strong></b></p>
+
+        <div class="btn-container">
+            <a href="img/waldemir curriculun.pdf" class="btn-pdf btn-open" target="_blank">
+        <i class="fa-solid fa-file-pdf"></i> Abrir PDF
+
+            </a>
+            <a href="/img/waldemir curriculun.pdf" class="btn-pdf btn-download" download>
+                <i class="fa-solid fa-download"></i> Baixar PDF
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:+5586988156044">86 98815-6044</a></p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jn427786@gmail.com">jn427786@gmail.com</a></p>
+            <p><i class="fa-solid fa-location-dot"></i> Bairro Angelim</p>
+        </section>
+
+        <section id="redes">
+            <h2>Redes Sociais</h2>
+            <a href="https://www.linkedin.com/in/waldemir-do-monte-nogueira-junior-nogueira-5870ab142" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/seuusuario" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>Java</li>
+                <li>Proatividade e determinação</li>
+                <li>Trabalho em equipe</li>
+                <li>Comunicação assertiva</li>
+                <li>Boa adaptação e pragmatismo</li>
+            </ul>
+        </section>
+
+        <section id="objetivo">
+            <h2>Objetivo</h2>
+            <p>Desejo atuar junto à empresa, assim adquiri conhecimento e aprimora os 
+adquiridos. tenho conhecimento com as ferramentas, Python, Mysql é 
+Java, sou proativo, Determinado e sei trabalhar em equipe, tenho um bom 
+relacionamento interpessoal, comunicação assertiva, boa adaptação. </p>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><b>Bacharelado em Ciência da Computação</b> – Unifapi (em andamento)</li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li>Empresa NETUSE - suporte tecnico (2025 - atual)</li>
+                <li>Analista de suporte técnico</li>
+                <li>Dinamo Engenharia: Eletricista de AT/BX PL</li>
+                <li>Comercial Carvalho Supermercado – Segurança e CFTV</li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <ul>
+
+<section id="certificados">
+    <h2>📜 Certificados e Cursos</h2>
+    <ul>
+        <li>
+            <i class="fa-solid fa-certificate"></i> Agente de I.A – automação com n8n e inteligência artificial
+            <a href="img/agente de i.a.pdf" target="_blank">[Ver certificado]</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-certificate"></i> Inteligência Artificial no ambiente acadêmico e empresarial
+            <a href="img/inteligencia artificial no ambiente academico.pdf" target="_blank">[Ver certificado]</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-certificate"></i> Inteligência Artificial e seus benefícios
+            <a href="img/inteligencia artificial e seus benefícios.pdf" target="_blank">[Ver certificado]</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-certificate"></i> Gestão e mapeamento de processos de TI
+            <a href="img/" target="_blank">[Ver certificado]</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-certificate"></i> PHP e MySQL – conectando e exibindo dados
+            <a href="img/php e sql conctando e exibido dados.pdf" target="_blank">[Ver certificado]</a>
+        </li>
+        
+        
+    </ul>
+</section>
